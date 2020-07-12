@@ -9,6 +9,7 @@ jobs:
 
     steps:
       - checkout
+      - run: apt install wget -y
       - run: wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
       - run: dpkg -i packages-microsoft-prod.deb
       - run: rm packages-microsoft-prod.deb
