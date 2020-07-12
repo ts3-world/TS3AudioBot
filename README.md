@@ -1,4 +1,4 @@
-# TS3AudioBot - ts3.world
+# TS3AudioBot - ts3.world Version
 
 This is a open-source TeamSpeak3 bot, playing music and much more.  
 
