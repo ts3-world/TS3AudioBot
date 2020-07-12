@@ -35,14 +35,15 @@ namespace TS3AudioBot
 		public event EventHandler OnWhisperNoTarget;
 
 		private static readonly string[] QuitMessages = {
-			"I'm outta here", "You're boring", "Have a nice day", "Bye", "Good night",
-			"Nothing to do here", "Taking a break", "Lorem ipsum dolor sit amet…",
-			"Nothing can hold me back", "It's getting quiet", "Drop the bazzzzzz",
-			"Never gonna give you up", "Never gonna let you down", "Keep rockin' it",
-			"?", "c(ꙩ_Ꙩ)ꜿ", "I'll be back", "Your advertisement could be here",
-			"connection lost", "disconnected", "Requested by API.",
-			"Robert'); DROP TABLE students;--", "It works!! No, wait...",
-			"Notice me, senpai", ":wq", "Soon™"
+                        "ts3.world | Dein kostenfreier MusikBot Hoster! | I'm outta here :",
+                        "ts3.world | Dein kostenfreier MusikBot Hoster! | Have a nice day :",
+                        "ts3.world | Dein kostenfreier MusikBot Hoster! | Taking a break :",
+                        "ts3.world | Dein kostenfreier MusikBot Hoster! | It's getting quiet :",
+                        "ts3.world | Dein kostenfreier MusikBot Hoster! | Drop the bazzzzz :",
+                        "ts3.world | Dein kostenfreier MusikBot Hoster! | Nothing can hold me back :",
+                        "ts3.world | Dein kostenfreier MusikBot Hoster! | It works! No, wait......",
+                        "ts3.world | Dein kostenfreier MusikBot Hoster! | Requested by captain curk...",
+                        "ts3.world | Dein kostenfreier MusikBot Hoster! | See ya :"
 		};
 
 		private bool closed = false;
