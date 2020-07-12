@@ -5,7 +5,7 @@ jobs:
     working_directory: ~/TS3AudioBot
 
     docker:
-      - image: amd64/debian
+      - image: amd64/debian:buster
 
     steps:
       - checkout
