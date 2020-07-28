@@ -20,8 +20,8 @@ jobs:
       - run: sudo apt install dotnet-sdk-3.0 -y
       - run: sudo apt install dotnet-sdk-3.1 -y
       - run: dotnet build --framework netcoreapp2.2 --configuration Release TS3AudioBot
-      - run: mkdir artifacts && cd artifacts
-      - run: zip -r artifacts.zip ~/TS3AudioBot/TS3AudioBot/bin/Release/netcoreapp2.2
+      - run: mkdir artifacts
+      - run: cd artifacts && zip -r artifacts.zip ~/TS3AudioBot/TS3AudioBot/bin/Release/netcoreapp2.2
       
       - store_artifacts:
-          path: artifacts
+          path: ~/TS3AudioBot/artifacts
