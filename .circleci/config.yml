@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - checkout
-      - run: apt update && apt full-upgrade -y && apt install wget sudo -y
+      - run: apt update && apt full-upgrade -y && apt install wget sudo zip -y
       - run: wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
       - run: dpkg -i packages-microsoft-prod.deb
       - run: rm packages-microsoft-prod.deb
@@ -20,6 +20,8 @@ jobs:
       - run: sudo apt install dotnet-sdk-3.0 -y
       - run: sudo apt install dotnet-sdk-3.1 -y
       - run: dotnet build --framework netcoreapp2.2 --configuration Release TS3AudioBot
+      - run: mkdir artifacts && cd artifacts
+      - run: zip -r artifacts.zip ~/TS3AudioBot/TS3AudioBot/bin/Release/netcoreapp2.2
       
       - store_artifacts:
-          path: TS3AudioBot/bin/Release/netcoreapp2.2
+          path: artifacts
