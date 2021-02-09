@@ -52,7 +52,7 @@ namespace TS3AudioBot
 		"ts3.world | DROP TABLE students;--",
 		"ts3.world | It works!! No, wait...",
 		"ts3.world | See you soon...",
-		"ts3.world | I'm outta here...",
+		"ts3.world | I'm outta here..."
 		};
 
 		private bool closed = false;
