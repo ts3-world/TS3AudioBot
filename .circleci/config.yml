@@ -17,9 +17,9 @@ jobs:
       - run: sudo apt install apt-transport-https -y
       - run: sudo apt update
       - run: sudo apt install dotnet-sdk-3.1 -y
-      - run: dotnet build --framework netcoreapp2.2 --configuration Release TS3AudioBot
+      - run: dotnet build --framework netcoreapp3.1 --configuration Release TS3AudioBot
       - run: mkdir artifacts
-      - run: cd artifacts && zip -r artifacts.zip ~/TS3AudioBot/TS3AudioBot/bin/Release/netcoreapp2.2
+      - run: cd artifacts && zip -r artifacts.zip ~/TS3AudioBot/TS3AudioBot/bin/Release/netcoreapp3.1
       
       - store_artifacts:
           path: ~/TS3AudioBot/artifacts
